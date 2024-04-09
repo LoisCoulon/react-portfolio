@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: $font1, sans-serif;
+    color: $grey;
+    background: $bg-color1;
+    overflow: hidden;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    input,
+    textarea {
+        font-family: $font1;
+    }
+ }
