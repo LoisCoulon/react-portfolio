@@ -81,6 +81,7 @@
     .picture{
         position: absolute;
         right: 30px;
+        top: 30px;
         animation: jackInTheBox 2s 1s;
         animation-fill-mode: forwards;
 
@@ -88,6 +89,25 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+        }
+    }
+
+    .resume{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        width: 40%;
+        max-height: 90%;
+        color: white;
+        animation: fadeIn 2s 5s backwards;
+
+        a{
+            color: $primary-color;
+
+            &:hover{
+            
+                color: white
+            }
         }
     }
 }

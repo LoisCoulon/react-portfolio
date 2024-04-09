@@ -1,4 +1,5 @@
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: $font1, sans-serif;
     color: $grey;
@@ -12,4 +13,6 @@ body {
     textarea {
         font-family: $font1;
     }
+
+    
  }
