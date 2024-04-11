@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom'
-import logolc from '../../assets/images/LC-light.png'
 import {
    FaEnvelope,
    FaGithub,
@@ -7,13 +6,31 @@ import {
    FaLinkedin,
    FaUser,
 } from 'react-icons/fa'
+import frenchFlag from '../../assets/images/frenchFlag.png'
+import usaFlag from '../../assets/images/usaFlag.jpg'
+import { useContext } from 'react'
+import { GlobalContext } from '../../context'
 
 export default function Sidebar() {
+   const { language, setLanguage, handleLanguageChange } =
+      useContext(GlobalContext)
+
    return (
       <div className="nav-bar">
-         <Link className="logo" to="/">
-            <img src={logolc} alt="logo" />
-         </Link>
+         <div className="flags" title="Select your language preference">
+            <img
+               onClick={language === 'en' ? handleLanguageChange : null}
+               src={frenchFlag}
+               alt="french flag"
+               title="Voir la page en français"
+            />
+            <img
+               onClick={language === 'fr' ? handleLanguageChange : null}
+               src={usaFlag}
+               alt="american flag"
+               title="See the page in english"
+            />
+         </div>
          <nav>
             <NavLink to="/">
                <FaHome color="#4d4d4e" />

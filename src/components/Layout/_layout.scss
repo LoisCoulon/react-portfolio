@@ -98,6 +98,11 @@
                 opacity: 0.6;
             }
         }
+        h2{
+            color: $grey;
+            animation: pulse 1s;
+            animation-delay: 1.4s;
+        }
         p{
             font-size: 13px;
             color: white;
@@ -114,6 +119,9 @@
             }
             &:nth-of-type(3) {
                 animation-delay: 1.5s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: 1.7s;
             }
         }
     }

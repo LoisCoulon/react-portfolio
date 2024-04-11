@@ -8,18 +8,21 @@ import { BrowserRouter } from 'react-router-dom'
 import './main.scss'
 import Home from './pages/Home/home'
 import Contact from './pages/Contact/contact'
+import GlobalState from './context'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <React.StrictMode>
       <BrowserRouter>
-         <Routes>
-            <Route path="/" element={<Layout />}>
-               <Route index element={<Home />} />
-               <Route path="about" element={<About />} />
-               <Route path="contact" element={<Contact />} />
-            </Route>
-         </Routes>
+         <GlobalState>
+            <Routes>
+               <Route path="/" element={<Layout />}>
+                  <Route index element={<Home />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="contact" element={<Contact />} />
+               </Route>
+            </Routes>
+         </GlobalState>
       </BrowserRouter>
    </React.StrictMode>
 )
