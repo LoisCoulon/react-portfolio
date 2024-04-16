@@ -16,3 +16,9 @@ body {
 
     
  }
+
+ @media screen and (max-width: 980px) {
+    body{
+        overflow: visible;
+    }
+ }

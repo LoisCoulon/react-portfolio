@@ -19,3 +19,22 @@
     transform: rotateX(90deg);
   }
 }
+
+@keyframes height {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes disapear{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none;
+  }
+}

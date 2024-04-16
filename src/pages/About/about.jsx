@@ -31,7 +31,7 @@ export default function About() {
                   <h1>
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                        strArray={'About me'.split('')}
                         index={15}
                      />
                   </h1>
@@ -63,7 +63,7 @@ export default function About() {
                   <h1>
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['A', ' ', 'p', 'r', 'o', 'p', 'o', 's']}
+                        strArray={'A propos'.split('')}
                         index={15}
                      />
                   </h1>

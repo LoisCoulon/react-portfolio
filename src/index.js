@@ -9,6 +9,7 @@ import './main.scss'
 import Home from './pages/Home/home'
 import Contact from './pages/Contact/contact'
 import GlobalState from './context'
+import Portfolio from './pages/Porfolio/portfolio'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -20,6 +21,7 @@ root.render(
                   <Route index element={<Home />} />
                   <Route path="about" element={<About />} />
                   <Route path="contact" element={<Contact />} />
+                  <Route path="portfolio" element={<Portfolio />} />
                </Route>
             </Routes>
          </GlobalState>

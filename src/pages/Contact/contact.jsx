@@ -51,18 +51,7 @@ export default function Contact() {
                <div className="text-zone">
                   <h1>
                      <AnimatedLetters
-                        strArray={[
-                           'C',
-                           'o',
-                           'n',
-                           't',
-                           'a',
-                           'c',
-                           't',
-                           ' ',
-                           'm',
-                           'e',
-                        ]}
+                        strArray={'Contact me'.split('')}
                         letterClass={letterClass}
                         index={15}
                      />
@@ -123,21 +112,7 @@ export default function Contact() {
                <div className="text-zone">
                   <h1>
                      <AnimatedLetters
-                        strArray={[
-                           'C',
-                           'o',
-                           'n',
-                           't',
-                           'a',
-                           'c',
-                           't',
-                           'e',
-                           'z',
-                           ' ',
-                           'm',
-                           'o',
-                           'i',
-                        ]}
+                        strArray={'Contactez moi'.split('')}
                         letterClass={letterClass}
                         index={15}
                      />

@@ -7,23 +7,6 @@
     z-index: 3;
     min-height: 500px;
 
-    // .logo{
-    //     display: block;
-    //     padding: 8px 0;
-
-    //     img{
-    //         display: block;
-    //         margin: 8px auto;
-    //         width: 50px;
-    //         height: auto;
-    //         border-radius: 50%;
-
-    //         &.sub-logo{
-    //             width: 70px;
-    //         }
-    //     }
-    // }
-
     .flags{
         display: flex;
         flex-direction: column;
@@ -51,7 +34,7 @@
 
         a{
             font-size: 22px;
-            color: #4d4d4e;
+            color: $grey;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -104,6 +87,11 @@
                 content: "CONTACT";
             }
         }
+        a.portfolio-link {
+            &::after{
+                content: "PORTFOLIO";
+            }
+        }
         .active{
             svg{
                 color: #ffd700 !important;
@@ -135,7 +123,104 @@
         }
     }
 
+    .top-nav{
+        display: none;
+    }
+
+    .hamburger-icon, .close-icon{
+        display: none;
+    }
+
      
 
 }
+
+@media screen and (max-width: 1200px) {
+    .nav-bar{
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+
+        .top-nav{
+            display: block;
+
+            img{
+                width: 80px;
+                border-radius: 50%;
+                margin: 10px;
+            }
+        }
+
+        ul, nav, .flags{
+            display: none;
+        }
+
+        nav{
+            width: 100%;
+            height: 100%;
+            background: $bg-color2;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 2;
+            margin: 0;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:after{
+                    opacity: 1;
+                    position: initial;
+                    width: auto;
+                    margin-left: 10px;
+
+                }
+
+                svg{
+                    opacity: 1 !important;
+                }
+            }
+
+            a:first-child, .about-link, .contact-link, .portfolio-link {
+                &::after{
+                    font-size: 30px;
+                }
+                svg{
+                    font-size: 35px;
+                }
+            }
+          
+            &.mobile-show{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                animation: fadeIn 300ms forwards;
+            }
+        }
+        .hamburger-icon, .close-icon{
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 1;
+        }
+        
+    .flags{
+        flex-direction: initial;
+        
+        &.mobile-show{
+            display: flex;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 3;
+        }
+
+    }
+    }
+ }
 

@@ -56,7 +56,7 @@
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 1s 3s backwards;
     }
 
     .flat-button{
@@ -69,9 +69,10 @@
         border: 1px solid $primary-color;
         margin-top: 25px;
         float: left;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 1s 3.5s backwards;
         white-space: nowrap;
-
+        letter-spacing: 3.5px;
+        text-align: center;
         &:hover {
             background: $primary-color;
             color: $grey;
@@ -84,10 +85,12 @@
         top: 30px;
         animation: jackInTheBox 2s 1s;
         animation-fill-mode: forwards;
-
+        width: 200px;
+        height: 200px;
         img{
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            height: auto;
+            bottom: 0;
             border-radius: 50%;
         }
     }
@@ -99,7 +102,7 @@
         width: 40%;
         max-height: 90%;
         color: white;
-        animation: fadeIn 2s 5s backwards;
+        animation: fadeIn 2s 4s backwards;
 
         a{
             color: $primary-color;
@@ -110,4 +113,56 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 980px) {
+
+   .tags, .home-page h1::before, .home-page h1::after{
+        display: none;
+   }
+
+   .home-page{
+    .text-zone{
+        position: initial;
+        width: 100%;
+        transform: none;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 43px;
+        }
+    }
+
+    .flat-button{
+        float: none;
+        display: block;
+        margin: 20px auto 0 auto ;
+        width: 125px;
+    }
+
+    .picture{
+        position: relative;
+        right: 0;
+        box-sizing: border-box;
+        margin: auto;
+        width: 100px;
+        height: auto;
+
+        img{
+            position: absolute;
+            
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: 0;
+            margin: auto;
+        }
+    }
+
+   }
 }

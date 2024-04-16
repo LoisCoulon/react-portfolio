@@ -11,35 +11,6 @@ export default function Home() {
    const [letterClass, setLetterClass] = useState('text-animate')
    const { language, setLanguage, handleLanguageChange } =
       useContext(GlobalContext)
-   const nameArray = [
-      ' ',
-      'L',
-      'o',
-      'ï',
-      's',
-      ' ',
-      'C',
-      'o',
-      'u',
-      'l',
-      'o',
-      'n',
-   ]
-   const jobArray = [
-      'W',
-      'e',
-      'b',
-      ' ',
-      'd',
-      'e',
-      'v',
-      'e',
-      'l',
-      'o',
-      'p',
-      'e',
-      'r',
-   ]
 
    useEffect(() => {
       setTimeout(() => {
@@ -58,17 +29,16 @@ export default function Home() {
                      <br />
                      <span className={`${letterClass} _12`}>I</span>
                      <span className={`${letterClass} _13`}>'m</span>
-                     {/* <img src={logo} alt="developer" /> */}
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={nameArray}
+                        strArray={' Loïs'.split('')}
                         index={14}
                      />
                      <br />
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={jobArray}
-                        index={30}
+                        strArray={'Web developer'.split('')}
+                        index={25}
                      />
                   </h1>
                   <h2>Frontend Developer / Javascript / React</h2>
@@ -90,9 +60,14 @@ export default function Home() {
             <div className="container home-page">
                <div className="text-zone">
                   <h1>
-                     <span className={`${letterClass}`}>H</span>
-                     <span className={`${letterClass} _11`}>e</span>
-                     <span className={`${letterClass} _12`}>y,</span>
+                     <span className={`${letterClass}`}>B</span>
+                     <span className={`${letterClass} _7`}>o</span>
+                     <span className={`${letterClass} _8`}>n</span>
+                     <span className={`${letterClass} _9`}>j</span>
+                     <span className={`${letterClass} _10`}>o</span>
+                     <span className={`${letterClass} _11`}>u</span>
+                     <span className={`${letterClass} _12`}>r,</span>
+
                      <br />
                      <span className={`${letterClass} _13`}>J</span>
                      <span className={`${letterClass} _14`}>e&nbsp;</span>
@@ -102,30 +77,14 @@ export default function Home() {
                      <span className={`${letterClass} _18`}>s</span>
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={nameArray}
+                        strArray={' Loïs'.split('')}
                         index={19}
                      />
                      <br />
                      <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={[
-                           'D',
-                           'é',
-                           'v',
-                           'e',
-                           'l',
-                           'o',
-                           'p',
-                           'p',
-                           'e',
-                           'u',
-                           'r',
-                           ' ',
-                           'w',
-                           'e',
-                           'b',
-                        ]}
-                        index={30}
+                        strArray={'Développeur web'.split('')}
+                        index={25}
                      />
                   </h1>
                   <h2>Développeur front end / Javascript / React</h2>

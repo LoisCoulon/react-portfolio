@@ -1,23 +1,30 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {
+   FaBars,
    FaEnvelope,
    FaGithub,
    FaHome,
    FaLinkedin,
+   FaSuitcase,
    FaUser,
+   FaWindowClose,
 } from 'react-icons/fa'
 import frenchFlag from '../../assets/images/frenchFlag.png'
 import usaFlag from '../../assets/images/usaFlag.jpg'
 import { useContext } from 'react'
 import { GlobalContext } from '../../context'
+import logo from '../../assets/images/LC-light.png'
 
 export default function Sidebar() {
-   const { language, setLanguage, handleLanguageChange } =
+   const { language, setLanguage, handleLanguageChange, showNav, setShowNav } =
       useContext(GlobalContext)
 
    return (
       <div className="nav-bar">
-         <div className="flags" title="Select your language preference">
+         <div
+            className={showNav ? 'flags mobile-show' : 'flags'}
+            title="Select your language preference"
+         >
             <img
                onClick={language === 'en' ? handleLanguageChange : null}
                src={frenchFlag}
@@ -31,16 +38,37 @@ export default function Sidebar() {
                title="See the page in english"
             />
          </div>
-         <nav>
-            <NavLink to="/">
+         <nav className={showNav ? 'mobile-show' : ''}>
+            <NavLink onClick={() => setShowNav(false)} to="/">
                <FaHome color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/about" className="about-link">
+            <NavLink
+               onClick={() => setShowNav(false)}
+               to="/about"
+               className="about-link"
+            >
                <FaUser color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/contact" className="contact-link">
+            <NavLink
+               onClick={() => setShowNav(false)}
+               to="/portfolio"
+               className="portfolio-link"
+            >
+               <FaSuitcase color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+               onClick={() => setShowNav(false)}
+               to="/contact"
+               className="contact-link"
+            >
                <FaEnvelope color="#4d4d4e" />
             </NavLink>
+            <FaWindowClose
+               className="close-icon"
+               color="#ffd700"
+               size="2.5rem"
+               onClick={() => setShowNav(false)}
+            />
          </nav>
          <ul>
             <li>
@@ -57,6 +85,18 @@ export default function Sidebar() {
                </a>
             </li>
          </ul>
+         <div className="top-nav">
+            <NavLink to="/">
+               <img src={logo} alt="logo" />
+            </NavLink>
+
+            <FaBars
+               onClick={() => setShowNav(true)}
+               color="#ffd700"
+               size="3rem"
+               className="hamburger-icon"
+            />
+         </div>
       </div>
    )
 }
