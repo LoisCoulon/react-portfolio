@@ -13,7 +13,7 @@ import frenchFlag from '../../assets/images/frenchFlag.png'
 import usaFlag from '../../assets/images/usaFlag.jpg'
 import { useContext } from 'react'
 import { GlobalContext } from '../../context'
-import logo from '../../assets/images/LC-light.png'
+import logo from '../../assets/images/LC.jpg'
 
 export default function Sidebar() {
    const { language, setLanguage, handleLanguageChange, showNav, setShowNav } =

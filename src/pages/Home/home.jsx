@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../components/AnimatedLetters/animatedLetters'
-import roundprofile from '../../assets/images/round-profile.png'
+import roundprofile from '../../assets/images/round-profile.jpg'
 import Loader from 'react-loaders'
 import resume from '../../assets/pdf/resume-en.pdf'
 import cv from '../../assets/pdf/resume-fr.pdf'
