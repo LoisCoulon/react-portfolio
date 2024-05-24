@@ -14,7 +14,7 @@ import Portfolio from './pages/Porfolio/portfolio'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <React.StrictMode>
-      <HashRouter>
+      <BrowserRouter>
          <GlobalState>
             <Routes>
                <Route path="/" element={<Layout />}>
@@ -25,7 +25,7 @@ root.render(
                </Route>
             </Routes>
          </GlobalState>
-      </HashRouter>
+      </BrowserRouter>
    </React.StrictMode>
 )
 
