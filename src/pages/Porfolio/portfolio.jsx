@@ -2,7 +2,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../../components/AnimatedLetters/animatedLetters'
 import { useContext, useEffect, useState } from 'react'
 import portfolioData from './data.json'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { GlobalContext } from '../../context'
 
 export default function Portfolio() {
@@ -24,7 +24,7 @@ export default function Portfolio() {
                <AnimatedLetters
                   letterClass={letterClass}
                   index={15}
-                  strArray={'portfolio'.split('')}
+                  strArray={'Portfolio'.split('')}
                />
             </h1>
             {language === 'en' ? (

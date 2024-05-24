@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Layout from './components/Layout/layout'
 import About from './pages/About/about'
 import reportWebVitals from './reportWebVitals'
@@ -14,7 +14,7 @@ import Portfolio from './pages/Porfolio/portfolio'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
          <GlobalState>
             <Routes>
                <Route path="/" element={<Layout />}>
@@ -25,7 +25,7 @@ root.render(
                </Route>
             </Routes>
          </GlobalState>
-      </BrowserRouter>
+      </HashRouter>
    </React.StrictMode>
 )
 

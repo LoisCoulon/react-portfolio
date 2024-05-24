@@ -1,56 +1,56 @@
 {   
     "portfolioFr": [
         {
-            "cover": "/portfolio/p3.png",
+            "cover": "./portfolio/p3.png",
             "title": "Oh my food",
             "description": "Dynamiser un site web",
             "technos": "HTML5, CSS3, SCSS, Animations, Intégration",
             "url": "https://loiscoulon.github.io/LoisCoulon_3_23122021/index.html"
         },
         {
-            "cover": "/portfolio/p6.png",
+            "cover": "./portfolio/p6.png",
             "title": "Fisheye",
             "description": "Coder un site web accessible / Créer des pages dynamiques",
             "technos": "Javascript, SCSS, Datas, Intégration",
             "url": "https://loiscoulon.github.io/LoisCoulon_6_20012022/index.html"
         },
         {
-            "cover": "/portfolio/p7.png",
+            "cover": "./portfolio/p7.png",
             "title": "Les petits plats",
             "description": "Développer un algorithme de recherche",
             "technos": "Javascript, Bootstrap, Algorithmes, Datas, Green code",
             "url": "https://loiscoulon.github.io/LoisCoulon_7_23022022/"
         },
         {
-            "cover": "/portfolio/p9.png",
+            "cover": "./portfolio/p9.png",
             "title": "Billed",
             "description": "Débugger et tester un SaaS RH",
             "technos": "Tests unitaires/end to end, Jest, Connexion back end to front end",
             "url": "https://loiscoulon.github.io/LoisCoulon_9_21032022/"
         },
         {
-            "cover": "/portfolio/p11.png",
+            "cover": "./portfolio/p11.png",
             "title": "Kasa",
             "description": "Créer une application React complète",
             "technos": "React, Javascript, SCSS, Figma, Debugging",
             "url": "https://github.com/LoisCoulon/P11_Kasa"
         },
         {
-            "cover": "/portfolio/p12.png",
+            "cover": "./portfolio/p12.png",
             "title": "SportSee",
             "description": "Développer un tableau de bord d'analytics avec React",
             "technos": "React, Javascript, SCSS, Recharts, API, NodeJS",
             "url": "https://github.com/LoisCoulon/P12-front"
         },
         {
-            "cover": "/portfolio/p13.png",
+            "cover": "./portfolio/p13.png",
             "title": "ArgentBank",
             "description": "Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.",
             "technos": "React, Redux, Javascript, SCSS, API, NodeJS",
             "url": "https://github.com/LoisCoulon/P13-front"
         },
         {
-            "cover": "/portfolio/p14.png",
+            "cover": "./portfolio/p14.png",
             "title": "HRnet",
             "description": "Refonte des pages clés de l’application en remplaçant un plugin jQuery spécifique par un composant React (dropdown component).",
             "technos": "React, Javascript, SCSS, API, NodeJS, Documentation technique, lighthouse",
@@ -59,56 +59,56 @@
     ],
     "portfolioEn": [
         {
-            "cover": "/portfolio/p3.png",
+            "cover": "./portfolio/p3.png",
             "title": "Oh my food",
             "description": "Build a dynamic web site",
             "technos": "HTML5, CSS3, SCSS, Animations, Integration",
             "url": "https://loiscoulon.github.io/LoisCoulon_3_23122021/index.html"
         },
         {
-            "cover": "/portfolio/p6.png",
+            "cover": "./portfolio/p6.png",
             "title": "Fisheye",
             "description": "Coding an accessible web site / Creating dynamic pages",
             "technos": "Javascript, SCSS, Datas, Integration",
             "url": "https://loiscoulon.github.io/LoisCoulon_6_20012022/index.html"
         },
         {
-            "cover": "/portfolio/p7.png",
+            "cover": "./portfolio/p7.png",
             "title": "Les petits plats",
             "description": "Develop a search algorithm",
             "technos": "Javascript, Bootstrap, Algorithmes, Datas, Green code",
             "url": "https://loiscoulon.github.io/LoisCoulon_7_23022022/"
         },
         {
-            "cover": "/portfolio/p9.png",
+            "cover": "./portfolio/p9.png",
             "title": "Billed",
             "description": "Debug and test an HR SaaS",
             "technos": "unitary tests/end to end, jest, conection back end to front end",
             "url": "https://loiscoulon.github.io/LoisCoulon_9_21032022/"
         },
         {
-            "cover": "/portfolio/p11.png",
+            "cover": "./portfolio/p11.png",
             "title": "Kasa",
             "description": "Create a full React.js app",
             "technos": "React, Javascript, SCSS, Figma, Debugging",
             "url": "https://github.com/LoisCoulon/P11_Kasa"
         },
         {
-            "cover": "/portfolio/p12.png",
+            "cover": "./portfolio/p12.png",
             "title": "SportSee",
             "description": "Develop an analytics dashboard with React",
             "technos": "React, Javascript, SCSS, Recharts, API, NodeJS",
             "url": "https://github.com/LoisCoulon/P12-front"
         },
         {
-            "cover": "/portfolio/p13.png",
+            "cover": "./portfolio/p13.png",
             "title": "ArgentBank",
             "description": "Create a web app allowing users to connect and manage their account and profile.",
             "technos": "React, Redux, Javascript, SCSS, API, NodeJS",
             "url": "https://github.com/LoisCoulon/P13-front"
         },
         {
-            "cover": "/portfolio/p14.png",
+            "cover": "./portfolio/p14.png",
             "title": "HRnet",
             "description": "Rebbuild main app pages replacing a Jquery plugin with a React component (dropdown component).",
             "technos": "React, Javascript, SCSS, API, NodeJS, technical documentation, lighthouse",

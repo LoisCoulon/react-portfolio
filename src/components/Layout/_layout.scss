@@ -148,6 +148,9 @@
     }
 
     .about-page, .contact-page, .portfolio-page {
+        h1{
+            font-size: 43px;
+        }
         .text-zone{
             position: initial;
             transform: none;
@@ -155,10 +158,6 @@
             display: block;
             padding: 20px;
             box-sizing: border-box;
-
-            h1{
-                font-size: 43px;
-            }
         }
     }
 

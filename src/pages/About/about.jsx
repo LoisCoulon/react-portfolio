@@ -8,6 +8,7 @@ import {
    FaHtml5,
    FaJsSquare,
    FaReact,
+   FaWordpress,
 } from 'react-icons/fa'
 import Loader from 'react-loaders'
 import { GlobalContext } from '../../context'
@@ -95,7 +96,7 @@ export default function About() {
             <div className="stage-cube-cont">
                <div className="cubespinner">
                   <div className="face1">
-                     <FaAngular color="#DD0031" />
+                     <FaJsSquare color="#EFD81D" />
                   </div>
                   <div className="face2">
                      <FaHtml5 color="#F06529" />
@@ -107,7 +108,7 @@ export default function About() {
                      <FaReact color="#5ED4F4" />
                   </div>
                   <div className="face5">
-                     <FaJsSquare color="#EFD81D" />
+                     <FaWordpress color="#000" />
                   </div>
                   <div className="face6">
                      <FaGithub color="#000" />
